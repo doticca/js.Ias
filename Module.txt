@@ -4,8 +4,8 @@ AntiForgery: enabled
 Author: Jeroen Fiege, Team Grapto (tweet: @teamgrapto)
 Website: https://github.com/grapto/js.Ias
 Version: 1.4.1
-OrchardVersion: 1.7
-Description: The jQuery.Ias module contains the jQuery Infinite Ajax Scrolling plugin and related script libraries.
+OrchardVersion: 1.8
+Description: The js.Ias module contains the jQuery Infinite Ajax Scrolling plugin and related script libraries.
 FeatureDescription: A common location for jQuery Infinite Ajax Scrolling and related script libraries.
 Category: Utility
 Dependencies: Orchard.jQuery
