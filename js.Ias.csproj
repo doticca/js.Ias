@@ -25,14 +25,7 @@
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
-    <SccProjectName>
-    </SccProjectName>
-    <SccLocalPath>
-    </SccLocalPath>
-    <SccAuxPath>
-    </SccAuxPath>
-    <SccProvider>
-    </SccProvider>
+    <UseGlobalApplicationHostFile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -42,7 +35,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <CodeAnalysisRuleSet>..\..\..\OrchardBasicCorrectness.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
@@ -110,12 +103,6 @@
     <Content Include="Views\Parts\js.Ias.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Styles\Web.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Scripts\Web.config" />
-  </ItemGroup>
-  <ItemGroup>
     <Content Include="placement.info" />
   </ItemGroup>
   <ItemGroup>
@@ -135,6 +122,12 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Web.config" />
+    <Content Include="Scripts\Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Styles\Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <None Include="web.Debug.config">
       <DependentUpon>web.config</DependentUpon>
     </None>
